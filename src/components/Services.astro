@@ -1,0 +1,35 @@
+
+---
+const services = [
+  {
+    title: 'Digital Marketing',
+    description: 'Comprehensive digital marketing strategies tailored for businesses in Uttar Pradesh.'
+  },
+  {
+    title: 'Social Media Management',
+    description: 'Expert social media management to boost your brand presence and engagement.'
+  },
+  {
+    title: 'Content Creation',
+    description: 'High-quality content creation services that resonate with your target audience.'
+  },
+  {
+    title: 'Website Development',
+    description: 'Custom website development solutions to enhance your online presence and user experience.'
+  }
+];
+---
+
+<section id="services" class="py-20 bg-white">
+  <div class="container mx-auto px-4">
+    <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+    <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      {services.map(service => (
+        <div class="bg-white p-6 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+          <h3 class="text-xl font-semibold mb-4">{service.title}</h3>
+          <p class="text-gray-600">{service.description}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

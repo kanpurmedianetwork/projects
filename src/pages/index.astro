@@ -1,0 +1,21 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import Contact from '../components/Contact.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Kanpur Media - Leading Digital Marketing Agency in Uttar Pradesh";
+const description = "Kanpur Media is a premier digital marketing and advertising agency in Uttar Pradesh, offering comprehensive media solutions for businesses across India.";
+---
+
+<Layout title={title} description={description}>
+  <Header />
+  <main>
+    <Hero />
+    <Services />
+    <Contact />
+  </main>
+  <Footer />
+</Layout>
